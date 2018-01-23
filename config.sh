@@ -15,4 +15,6 @@ useradd -c "SMB guest" -m -g smbguests -p $GUEST_PASS $GUEST_USER
 echo "DenyGroups smbusers smbguests" >>/etc/ssh/sshd_config
 mkdir /export
 chown $USER.smbusers /export
-chmod 775 /export 
+chmod 775 /export
+
+
